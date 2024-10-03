@@ -14,7 +14,7 @@
 	<AIRobot_Cleaner_CleaningSpeed>Clening Speed {0}%, Recommended 100%</AIRobot_Cleaner_CleaningSpeed>
 	<AIRobot_Cleaner_II_CleaningSpeed>Clening Speed {0}%, Recommended 200%</AIRobot_Cleaner_II_CleaningSpeed>
 	<AIRobot_Cleaner_III_CleaningSpeed>Clening Speed {0}%, Recommended 250%</AIRobot_Cleaner_III_CleaningSpeed>
-	<AIRobot_Cleaner_IV_CleaningSpeed>Clening Speed {0}%, Recommended 300%</AIRobot_Cleaner_IV_CleaningSpeed>>
+	<AIRobot_Cleaner_IV_CleaningSpeed>Clening Speed {0}%, Recommended 300%</AIRobot_Cleaner_IV_CleaningSpeed>
 	<AIRobot_Cleaner_V_CleaningSpeed>Clening Speed {0}%, Recommended 400%</AIRobot_Cleaner_V_CleaningSpeed>
 	
 	<AIRobot_Cleaner_MarketValue>Recommended 1500$</AIRobot_Cleaner_MarketValue>
@@ -26,12 +26,6 @@
 
 
 	<Builder_Settings>Builder Settings</Builder_Settings>
-	
-	<RPP_Bot_Builder_I_MarketValue>Recommended 1500$</RPP_Bot_Builder_I_MarketValue>
-	<RPP_Bot_Builder_II_MarketValue>Recommended 1500$</RPP_Bot_Builder_II_MarketValue>
-	<RPP_Bot_Builder_III_MarketValue>Recommended 1500$</RPP_Bot_Builder_III_MarketValue>
-	<RPP_Bot_Builder_IV_MarketValue>Recommended 1500$</RPP_Bot_Builder_IV_MarketValue>
-	<RPP_Bot_Builder_V_MarketValue>Recommended 1500$</RPP_Bot_Builder_V_MarketValue>
 	
 	<RPP_Bot_Builder_I_ConstructionSpeed>Construction Speed {0}%, Recommended 100%</RPP_Bot_Builder_I_ConstructionSpeed>
 	<RPP_Bot_Builder_II_ConstructionSpeed>Construction Speed {0}%, Recommended 200%</RPP_Bot_Builder_II_ConstructionSpeed>
@@ -302,7 +296,7 @@
 	<ER_Station_Settings>ER Station</ER_Station_Settings>
 	<Omni_Station_Settings>Omni Station</Omni_Station_Settings>
 
-	>
+	!-->
 	
 	
 </LanguageData>

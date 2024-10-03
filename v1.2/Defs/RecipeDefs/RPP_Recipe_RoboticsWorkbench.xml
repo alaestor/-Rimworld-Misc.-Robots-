@@ -29,7 +29,7 @@
 	</RecipeDef>
 
 
-	<!--******** INHERET ********-->
+	<!--******** INHERIT ********-->
 
 <!-- resource -->
 
@@ -62,7 +62,7 @@
 		<researchPrerequisite>RPP_Research_Fundamentals</researchPrerequisite>
 	</RecipeDef>
 
-<!-- matricies -->
+<!-- matrices -->
 
 	<RecipeDef ParentName="RPP_Recipe_Matrix">
 		<defName>RPP_Production_Matrix_I</defName>

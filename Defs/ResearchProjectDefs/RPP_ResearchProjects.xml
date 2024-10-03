@@ -22,9 +22,9 @@
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
-	<!--******** INHERET ********-->
+	<!--******** INHERIT ********-->
 
-<!-- Tiers and Matricies -->
+<!-- Tiers and Matrices -->
 
 	<ResearchProjectDef ParentName="RPP_Research">
 		<defName>RPP_Research_Matrix_I</defName>

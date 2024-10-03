@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>RPP_Matrices</defName>
+      <label>matrices</label>
+      <parent>Robots</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>RPP_Base_Stations</defName>
+        <label>robots</label>
+        <parent>Buildings</parent>
+    </ThingCategoryDef>
+
+</Defs>

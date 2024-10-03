@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--******** META ********-->
+
+    <RecipeDef Abstract="True" Name="RPP_Recipe_Recycle">
+        <workAmount>1600</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <specialProducts>
+            <li>Smelted</li>
+        </specialProducts>
+    </RecipeDef>
+
+	<!--******** INHERIT ********-->
+
+<!-- matrices -->
+
+    <RecipeDef ParentName="RPP_Recipe_Recycle">
+        <defName>RPP_Recycle_Matrix</defName>
+        <label>recycle robotic matrix</label>
+        <description>Use heat and strong electromagnets to break down robot matrices into useful components.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>RPP_Matrices</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>RPP_Matrices</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+</Defs>

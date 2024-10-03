@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <!-- Recipe Recycling -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ElectricSmelter"]/recipes</xpath>
+        <value>
+            <li>RPP_Recycle_Matrix</li>
+        </value>
+    </Operation>
+
+    <!-- Item List Cleanup -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="AIRobot_MinifiedRechargeStation"]/thingCategories</xpath>
+    </Operation>
+
+</Patch>

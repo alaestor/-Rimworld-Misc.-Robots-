@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--
+		vertical <researchViewY>1</researchViewY>
+		horizontal <researchViewX>1</researchViewX>
+	-->
+
+	<!--******** META ********-->
+
+	<ResearchProjectDef Abstract="True" Name="RPP_Research">
+		<tab>RPP_Reasearch_Tab</tab>
+		<techLevel>Industrial</techLevel>
+	</ResearchProjectDef>
+
+	<!--******** TIER META ********-->
+
+	<ResearchProjectDef Abstract="True" Name="RPP_Research_Tier" ParentName="RPP_Research">
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+
+	<!--******** TYPE META ********-->
+
+	<ResearchProjectDef Abstract="True" Name="RPP_Research_Type" ParentName="RPP_Research">
+		<baseCost>500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites><li>RPP_Research_Fundamentals</li></prerequisites>
+		<researchViewX>1</researchViewX>
+	</ResearchProjectDef>
+
+	<!--******** INHERIT ********-->
+
+<!-- Tiers and Matrices -->
+
+	<ResearchProjectDef ParentName="RPP_Research_Tier">
+		<defName>RPP_Research_Matrix_I</defName>
+		<label>Robotics:\nSimple Logic</label>
+		<description>Tier 1: Investigation into the production of the Simple Robotic Matrix units to make robots with workskill 4.</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>RPP_Research_Fundamentals</li>
+			<li>Machining</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="RPP_Research_Tier">
+		<defName>RPP_Research_Matrix_II</defName>
+		<label>Robotics:\nBasic Logic</label>
+		<description>Tier 2: Investigation into the production of the Basic Robotic Matrix units to make robots with workskill 8.</description>
+		<baseCost>750</baseCost>
+		<prerequisites><li>RPP_Research_Matrix_I</li></prerequisites>
+		<researchViewX>2</researchViewX>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="RPP_Research_Tier">
+		<defName>RPP_Research_Matrix_III</defName>
+		<label>Robotics:\nIntermediate Logic</label>
+		<description>Tier 3: Investigation into the production of the Intermediate Robotic Matrix units to make robots with workskill 13.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>RPP_Research_Matrix_II</li>
+			<li>MicroelectronicsBasics</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="RPP_Research_Tier">
+		<defName>RPP_Research_Matrix_IV</defName>
+		<label>Robotics:\nAdvanced Logic</label>
+		<description>Tier 4: Investigation into the production of the Advanced Robotic Matrix units to make robots with workskill 16.</description>
+		<baseCost>2500</baseCost>
+		<prerequisites><li>RPP_Research_Matrix_III</li></prerequisites>
+		<requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
+		<researchViewX>4</researchViewX>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="RPP_Research_Tier">
+		<defName>RPP_Research_Matrix_V</defName>
+		<label>Robotics:\nAnti-Logic\n(NP=P)</label>
+		<description>Tier 5: Break the boundaries set by existing levels of technology, understandings of logic, and the very concepts of causation. Our scientific horizons are becoming a lot more timey-wimey. Investigation into the production of the Anti-Logic Robotic Matrix units to make robots with workskill 20.</description>
+		<baseCost>4000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>RPP_Research_Matrix_IV</li>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
+		<researchViewX>5</researchViewX>
+	</ResearchProjectDef>
+
+
+<!-- Entry Point -->
+
+	<ResearchProjectDef ParentName="RPP_Research">
+		<defName>RPP_Research_Fundamentals</defName>
+		<label>Robotics:\nFundamentals</label>
+		<description>Tier 0:\nInvestigation into the easiest principles of robotics and automation.</description>
+		<baseCost>200</baseCost>
+		<prerequisites><li>Electricity</li></prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+<!-- RPP -->
+
+	<ResearchProjectDef ParentName="RPP_Research_Type">
+		<defName>RPP_Research_Cleaner_All</defName>
+		<label>Cleaner</label>
+		<description>Production of cleaning robots. The Hauling and Cleaning bots are faster than all other bots of the same tier.</description>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RPP_Research_Type">
+		<defName>RPP_Research_Hauler_All</defName>
+		<label>Hauler</label>
+		<description>Production of Hauling robots. The Hauling and Cleaning bots are faster than all other bots of the same tier.</description>
+		<researchViewY>0.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RPP_Research_Type">
+		<defName>RPP_Research_Builder_All</defName>
+		<label>Builder</label>
+		<description>Production of Construction + Mining robots.</description>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RPP_Research_Type">
+		<defName>RPP_Research_Crafter_All</defName>
+		<label>Crafter</label>
+		<description>Production of Crafting robots.</description>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RPP_Research_Type">
+		<defName>RPP_Research_ER_All</defName>
+		<label>ER</label>
+		<description>Production of Emergency Response robots.</description>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RPP_Research_Type">
+		<defName>RPP_Research_Kitchen_All</defName>
+		<label>Kitchen</label>
+		<description>Production of Kitchen robots.</description>
+		<researchViewY>2.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RPP_Research_Type">
+		<defName>RPP_Research_Omni_All</defName>
+		<label>Omni-robotics</label>
+		<description>Production of Omni robots that combine the jobs of all the other robots.</description>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>RPP_Research_Cleaner_All</li>
+			<li>RPP_Research_Hauler_All</li>
+			<li>RPP_Research_Builder_All</li>
+			<li>RPP_Research_Crafter_All</li>
+			<li>RPP_Research_ER_All</li>
+			<li>RPP_Research_Kitchen_All</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
+		<baseCost>1000</baseCost>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1.25</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

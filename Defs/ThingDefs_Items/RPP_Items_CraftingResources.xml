@@ -35,7 +35,7 @@
 		</statBases>
 	</ThingDef>
 
-	<!-- Matricies -->
+	<!-- Matrices -->
 	<ThingDef ParentName="RPP_Resource">
 		<defName>RPP_Matrix_I</defName>
 		<label>Robotic Matrix (Simple)</label>

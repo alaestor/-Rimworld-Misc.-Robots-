@@ -36,7 +36,7 @@
 	<RPP_Research_Omni_All.label>Omni-robotics</RPP_Research_Omni_All.label>
 	<RPP_Research_Omni_All.description>Production of Omni robots that combine the jobs of all the other robots.</RPP_Research_Omni_All.description>
 
-	<RPP_Research_Omni_I.label>OmniBot I</RPP_Research_Omni_I.label>
+	<!-- <RPP_Research_Omni_I.label>OmniBot I</RPP_Research_Omni_I.label>
 	<RPP_Research_Omni_I.description>A basic-logic tier of Omnibot.</RPP_Research_Omni_I.description>
 	<RPP_Research_Omni_II.label>OmniBot II</RPP_Research_Omni_II.label>
 	<RPP_Research_Omni_II.description>A simple-logic tier of Omnibot.</RPP_Research_Omni_II.description>
@@ -45,6 +45,6 @@
 	<RPP_Research_Omni_IV.label>OmniBot IV</RPP_Research_Omni_IV.label>
 	<RPP_Research_Omni_IV.description>An advanced-logic tier of Omnibot.</RPP_Research_Omni_IV.description>
 	<RPP_Research_Omni_V.label>OmniBot V</RPP_Research_Omni_V.label>
-	<RPP_Research_Omni_V.description>An anti-logic tier of Omnibot.</RPP_Research_Omni_V.description>
+	<RPP_Research_Omni_V.description>An anti-logic tier of Omnibot.</RPP_Research_Omni_V.description> -->
 
 </LanguageData>
